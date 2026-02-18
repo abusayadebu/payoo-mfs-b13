@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +22,7 @@
     </style>
     
 </head>
+
 <body class="min-h-screen max-w-md bg-blue-100 mx-auto rounded-xl my-5 flex flex-col justify-center items-center">
         <!-- logo div -->
     <div class="w-[200px] mx-auto my-8">
@@ -33,12 +34,16 @@
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label text-neutral font-bold text-lg">Phone Number</label>
-          <input maxlength="11" minlength="11" type="text" class="input bg-base-200 rounded-full" placeholder="Enter Your 11 Digit Phon Number" />
+          <input id="number-input" maxlength="11" minlength="11" type="text" class="input bg-base-200 rounded-full" placeholder="Enter Your 11 Digit Phon Number" />
           <label class="label text-neutral font-bold text-lg">4 Digit Pin</label>
-          <input type="password" class="input bg-base-200 rounded-full" placeholder="Enter 4 Digit Pin" />
-          <button class="btn btn-primary mt-4 font-bold text-lg rounded-full">Login</button>
+          <input id="pin-input" maxlength="4" type="password" class="input bg-base-200 rounded-full" placeholder="Enter 4 Digit Pin" />
+          <button id="login-btn" class="btn btn-primary mt-4 font-bold text-lg rounded-full">Login</button>
         </fieldset>
       </div>
     </div>
+
+
+    <!-- script -->
+     <script src="./login/login.js"></script>
 </body>
 </html>
