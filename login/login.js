@@ -7,11 +7,12 @@ const loginBtn = document.getElementById("login-btn").addEventListener("click", 
     console.log(givenNumber, givenPin);
 
     if(givenNumber === "1234567890" && givenPin == "1234"){
-        console.log("welcome you are logged in")
+        alert("welcome you are logged in")
         window.location.assign("./home.html")
         }
         else{
             alert("sorry, wrong credentials")
+            return;
         }
     
 })
