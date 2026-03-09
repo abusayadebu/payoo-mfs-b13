@@ -29,7 +29,7 @@ const addMoneyBtn = document.getElementById("add-money-btn").addEventListener("c
     }
 
     // total balance
-    const totalBalance = mainBalance - addMoneyAmount;
+    const totalBalance = mainBalance + addMoneyAmount;
     // show the update balance in the UI
     document.getElementById("main-balance").innerText = totalBalance;
 
