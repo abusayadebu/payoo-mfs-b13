@@ -26,5 +26,5 @@ addMoneyMainBtn.addEventListener("click", function(){
 
 // click log out and send to the home page
 logOutBtn.addEventListener("click", function(){
-    window.location.href = '/index.html';
+    window.location.href = '../index.html';
 })
